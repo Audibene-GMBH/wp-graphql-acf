@@ -482,6 +482,7 @@ class Config {
 	 */
 	public static function get_supported_fields() {
 		$supported_fields = [
+			'unique_id',
 			'text',
 			'textarea',
 			'number',
@@ -554,6 +555,7 @@ class Config {
 		], $type_name, $field_name, $config );
 
 		switch ( $acf_type ) {
+			case 'unique_id':	
 			case 'button_group':
 			case 'color_picker':
 			case 'email':
